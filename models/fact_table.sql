@@ -1,1 +1,1 @@
-SELECT * FROM `kpmg-379916.kpmg.source_fact_table`
+SELECT * FROM `kpmg-379916.kpmg.source_fact_table` 

@@ -1,6 +1,9 @@
+{{ config(materialized='table') }}
 
--- Use the `ref` function to select from other models
+with fact_table as (
+    select * from {{ ref('fact_table') }}
+)
 
-select *
-from {{ ref('my_first_dbt_model') }}
-where id = 1
+SELECT DISTINCT Client_Country
+FROM fact_table
+
