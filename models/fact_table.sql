@@ -1,0 +1,1 @@
+SELECT int64_field_0 FROM `kpmg-379916.kpmg.source_fact_table`
